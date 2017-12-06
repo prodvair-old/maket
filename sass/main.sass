@@ -1,0 +1,181 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	font-family: $font
+	overflow-x: hidden
+	opacity: 1
+
+h1, h2, h3, h4, h5, h6
+	font-family: "Myanmar Text", sans-serif
+	text-transform: uppercase
+
+.line-blog
+	margin-left: 50%
+	.line
+		width: 100px
+		height: 2px
+		margin-left: -50px
+		background-color: #000
+
+@keyframes siz
+	0%
+		margin-left: -425px
+	100%
+		margin-left: 0
+
+@keyframes sizz
+	0%
+		margin-right: -895px
+	100%
+		margin-right: 0
+
+header
+	height: 100vh
+	.head-fon
+		position: absolute
+		top: 120px
+		h1
+			font-weight: lighter
+			position: relative
+			top: 150px
+			display: block
+			text-align: center
+			font-size: 60px
+			letter-spacing: 22px
+		img
+			width: 100%
+	.logo
+		text-transform: uppercase
+		display: inline-block
+		margin-top: 70px
+		padding: 7px 90px
+		line-height: normal
+		background-color: #fff
+		box-shadow: 0 0 30px rgba(0, 0, 0, 0.1)
+		font-size: 60px
+		text-align: center
+		max-width: 400px
+		max-height: 95px
+		animation: siz 2s ease-out
+	.top-menu
+		float: right
+		display: inline-block
+		background-color: #fff
+		box-shadow: 0 0 30px rgba(0, 0, 0, 0.1)
+		margin-top: 70px
+		animation: sizz 1.8s ease-out
+		ul
+			margin: 20px 30px
+			li
+				text-transform: uppercase
+				line-height: 0
+				display: inline-block
+				a
+					display: block
+					padding: 35px 10px 20px
+					font-size: 37px
+					color: #000
+					&:hover
+						color: $accent
+						text-decoration: none
+					&:focus
+						color: $accent
+
+.section-1
+	position: relative
+	top: 140px
+	background-color: #fff
+	box-shadow: 0 0 150px rgba(0, 0, 0, 0.2)
+	height: 530px
+	width: 100%
+	display: block
+	z-index: 1
+	h2
+		font-size: 50px
+		font-weight: lighter
+		letter-spacing: 16px
+		text-align: center
+		line-height: 1em
+	.text-blog
+		margin-top: 50px
+		margin-bottom: 100px
+		margin-left: 22%
+		width: 110vh
+		text-align: center
+		span
+			font-size: 32px
+			font-weight: lighter
+	.up-blog
+		box-shadow: 0 -20px 30px 0 rgba(0, 0, 0, 0.2)
+		transform: rotate(-5deg)
+		background-color: #fff
+		height: 140px
+		width: 110%
+		position: relative
+		top: -80px
+		z-index: 2
+	.figur1
+		transform: rotate(-5deg)
+		position: absolute
+		top: 70px
+		left: -30px
+		z-index: 3
+		width: 200px
+	.figur2
+		position: absolute
+		top: 400px
+		left: 70px
+		z-index: 3
+		width: 100px
+
+.section-2
+	height: 700px
+	background-color: #fafafa
+	h2
+		padding-top: 240px
+		font-size: 50px
+		font-weight: lighter
+		letter-spacing: 16px
+		text-align: center
+		line-height: 1em
+
+@import "media" // Всегда в конце
